@@ -7,7 +7,7 @@ $(document).ready(function(){/* activate sidebar */
 
   /* activate scrollspy menu */
   var $body   = $(document.body);
-  var navHeight = $('.navbar').outerHeight(true)+125; //add the height of header
+  var navHeight = $('.navbar').outerHeight(true)
  
   $body.scrollspy({
   	target: '#leftCol',
@@ -21,7 +21,7 @@ $(document).ready(function(){/* activate sidebar */
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
         if (target.length) {
           $('html,body').animate({
-            scrollTop: target.offset().top
+            scrollTop: target.offset().top -125
           }, 1000);
           return false;
         }
